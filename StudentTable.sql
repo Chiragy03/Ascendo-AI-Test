@@ -1,11 +1,12 @@
 CREATE TABLE Student
 (
-student_id int,
+student_id int NOT NULL,
 student_name varchar,
 created_at datetime,
 created_by varchar,
 updated_at datetime,
-updated_by varchar
+updated_by varchar,
+  PRIMARY KEY (student_id)
 );
 
 INSERT INTO Student VALUES (1, 'ROHIT', '2022-11-15', 'ABEL' , '2022-11-15', 'ABEL');
