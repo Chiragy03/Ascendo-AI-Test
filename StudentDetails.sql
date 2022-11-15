@@ -1,13 +1,13 @@
 CREATE TABLE StudentDetails
 (
-id :int
+id: int NOT NULL,
 student_id: int,
-OtherDetails: varchar
-created_at: datetime
-created_by: varchar
-updated_at: datetime
-updated_by: varchar
-  FORIEGN KEY()
+OtherDetails: varchar,
+created_at: datetime,
+created_by: varchar,
+updated_at: datetime,
+updated_by: varchar,
+  FORIEGN KEY(student_id) REFERENCES Student(student_id)
 );
 
 INSERT INTO StudentDetails VALUES (1, 'M', '2022-11-15', 'ABEL' , '2022-11-15', 'ABEL');
